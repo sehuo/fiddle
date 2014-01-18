@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            test
+        </title>
+        <style>
+            .tm-a,.tm-b,.tm-c{display:inline-block;width:150px;min-height:300px}
+            .tm-a{background-color:gray}
+            .tm-c{background-color:yellow}
+        </style>
+    </head>
+    <body style="height:800px">  
+        <div class="tm-a">a1
+            <img src="http://gtms03.alicdn.com/tps/i1/T1SDEDFidlXXbmbP6j-60-60.jpg" data-ks-lazyload="http://img04.taobaocdn.com/imgextra/i4/746470958/T2lUmcXBVaXXXXXXXX_!!746470958.jpg_120x120.jpg">
+        </div>              
+        <div class="tm-a">a2
+            <img src="http://gtms03.alicdn.com/tps/i1/T1SDEDFidlXXbmbP6j-60-60.jpg" data-ks-lazyload="http://img04.taobaocdn.com/imgextra/i4/746470958/T2lUmcXBVaXXXXXXXX_!!746470958.jpg_120x120.jpg">
+        </div>
+
+        <div class="tm-b" style="display:none">b1
+            <img src="http://gtms03.alicdn.com/tps/i1/T1SDEDFidlXXbmbP6j-60-60.jpg" data-ks-lazyload="http://gi1.mlist.alicdn.com/bao/uploaded/i1/10315022933137817/T118KAXDBfXXXXXXXX_!!0-item_pic.jpg_120x120.jpg">
+        </div>                  
+        <div class="tm-b">b2
+            <img src="http://gtms03.alicdn.com/tps/i1/T1SDEDFidlXXbmbP6j-60-60.jpg" data-ks-lazyload="http://gi1.mlist.alicdn.com/bao/uploaded/i1/10315022933137817/T118KAXDBfXXXXXXXX_!!0-item_pic.jpg_120x120.jpg">
+        </div>
+
+        <div class="tm-c">c1
+            <img src="http://gtms03.alicdn.com/tps/i1/T1SDEDFidlXXbmbP6j-60-60.jpg"  data-ks-lazyload="http://gi1.mlist.alicdn.com/bao/uploaded/i1/14150029732277425/T1PhvyFhNgXXXXXXXX_!!0-item_pic.jpg_120x120.jpg">
+        </div>               
+        <div class="tm-c" style="display:none">c2
+            <img src="http://gtms03.alicdn.com/tps/i1/T1SDEDFidlXXbmbP6j-60-60.jpg" data-ks-lazyload="hhttp://gi1.mlist.alicdn.com/bao/uploaded/i1/14150029732277425/T1PhvyFhNgXXXXXXXX_!!0-item_pic.jpg_120x120.jpg">
+        </div>
+        <script src="http://g.tbcdn.cn/??kissy/k/1.3.2/seed-min.js"></script>
+        <script>
+            KISSY.use("dom,datalazyload",function (S,DOM,Datalazyload) {
+                function D(sele){
+                    return new Datalazyload({
+                        container:DOM.query(sele)
+                    });
+                }
+                var a = new D(".tm-a");
+                var b = new D(".tm-b");
+                var c = new D(".tm-c");
+            })
+        </script>
+    </body>
+</html>
