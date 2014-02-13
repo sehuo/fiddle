@@ -1,6 +1,7 @@
 /**
-* 听写节目图表模块
+* 地区模块
 * @author daqiu 2014.02
+* @desc  fork https://github.com/rockyuse/svgmap，修正与seajs的冲突，其他方便参考他的官方说明
 */
 ;define("mod/map",["lib/raphael-min.js",'lib/chinaMapConfig','lib/map'],function(require, exports, module){
     var leveMap = {
@@ -11,12 +12,9 @@
     return {
         /*
         * @param [cfg] {Object} 
-        * @param [cfg.data] {Array} 节目国家列表
-        * @param [cfg.data[0].name] {String} 城市区
-        * @param [cfg.data[0].icon] {String} 城市ICON URL
+        * @param [cfg.dq] {Object} 地区对象，key为地区拼音id，地区拼音id见chinaMapConfig.js列表
+        * {"jiangsu":{"data":0.34}}，注意cfg.dq[key]['data']类型为Number，模块中未作兼容牏。。
         * @param [jEl] {Object} 模块节点对应jquery对象
-        * @return 
-        * color由谁设 视情况
         */
         init:function(cfg,jEl){
             var cfg = this.resetData(cfg);
@@ -95,6 +93,5 @@
                 });
             });
         }
-        
     }
 });

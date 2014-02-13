@@ -1,17 +1,16 @@
 /**
-* 听写节目图表模块
+* 听写最多的城市模块
 * @author daqiu 2014.02
 */
 ;define("mod/citytop",function(require, exports, module){
     return {
         /*
         * @param [cfg] {Object} 
-        * @param [cfg.data] {Array} 节目国家列表
+        * @param [cfg.data] {Array} 城市列表，length请控制在3，没有对不是3个城市的数据做测试过。。。
         * @param [cfg.data[0].name] {String} 城市区
         * @param [cfg.data[0].icon] {String} 城市ICON URL
         * @param [jEl] {Object} 模块节点对应jquery对象
         * @return 
-        * color由谁设 视情况
         */
         init:function(cfg,jEl){
             if(!cfg.data || !cfg.data.length){return};
@@ -19,7 +18,6 @@
             jEl.html(this.render(cfg.data,cfg.colors));
         },
         // 生成html结构
-        // jQuery template 不熟 就先硬编码了
         render:function(data,colors){
             var html = [];
             html.push("<ul class='cjd_fz_m3list clearbox'>");

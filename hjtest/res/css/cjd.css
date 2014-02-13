@@ -88,10 +88,9 @@
         transform:rotate(18deg);
         margin:30px 0 0 72px;
     }
-
     .cjd_fz_m3list em{
         display:block;height:55px;width: 55px;border-radius:27px;
-        text-align: center;font: normal normal normal 16px/55px "Microsoft YaHei";color:white;
+        text-align: center;font: normal normal normal 16px/55px "Microsoft YaHei";color:white;z-index:2;
     }
 
 /* 地区面面观 */
@@ -128,8 +127,8 @@
     .cjd_maptip .i3{background-position:2px -166px}
 
     /* 提示自定义 */
-    .stateTip, #StateTip{display:none; position:absolute; padding:8px; background:#fff; border:2px solid #2385B1; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; font-size:12px; font-family:Tahoma; color:#333;}
-    .mapInfo i{ display:inline-block; width:15px; height:15px; margin-top:5px; line-height:15px; background:#aeaeae; color:#fff; font-size:11px; font-family: Tahoma; -webkit-border-radius:15px; border-radius:15px; text-align:center}
+    .stateTip, #StateTip{display:none; position:absolute; padding:8px; background:#fff; border:2px solid #2385B1; border-radius: 4px; font-size:12px; font-family:Tahoma; color:#333;}
+    .mapInfo i{ display:inline-block; width:15px; height:15px; margin-top:5px; line-height:15px; background:#aeaeae; color:#fff; font-size:11px; font-family: Tahoma; border-radius:15px; text-align:center}
     .mapInfo i.active{background:#E27F21;}
     .mapInfo span{ padding:0 5px 0 3px;}
     .mapInfo b{ font-weight:normal; color:#2770B5}
