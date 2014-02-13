@@ -5,6 +5,10 @@
 
 /**/
     .cjd_bd em{font-style:normal;}
+/*hd*/
+    .cjd_hder{width:1002px;margin:0 auto;height:100%;}
+    .cjd_report{margin-right:140px;margin-top:205px;float:right;font-size:18px;}
+    .cjd_report , .cjd_report:hover{color:#ebd2be;}
 /* mod */
     .cjd_mod,.cjd_mod_tit s{
         background-color:#f9f4e5;
@@ -32,6 +36,12 @@
         height:307px;
     }
     .cjd_fz_mtit{height:22px;line-height:22px;padding-top:24px;font-size:16px;}
+    .cjd_share,.cjd_share_targ{
+        float:right;background-image:url(../img/ico_share.png);background-repeat:no-repeat;
+    }
+    .cjd_share{margin:13px 14px 0 0;height:23px;width:52px;padding-left:64px;background-position:0 0;text-indent: -10em;overflow: hidden;}
+    .cjd_share_targ{display: block;height:100%;width:100%;background-position:-64px 0;float:right;}
+
     .cjd_fz_m1{float:left;width:100%}
     .cjd_fz_m1bg{
         display:block;width:668px;margin-top:37px;overflow:hidden;height:0;
@@ -39,8 +49,6 @@
     }
     .cjd_fz_m1tip{font-size:16px;text-align:center;margin-top:-55px;margin-bottom:28px;width:744px;height:55px;border-bottom:6px solid #e5dcc3;}
     .cjd_fz_m1tip em{color:#dd4a4a;font:normal normal bold 24px/55px "Microsoft YaHei",'黑体';}
-    
-  
     .cjd_fz_m2{width:488px;position:relative;}
     .cjd_fz_m2bg,
     .cjd_fz_m2tb{

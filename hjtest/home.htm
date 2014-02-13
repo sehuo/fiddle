@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<html>
+    <!--
+        1. 吊顶线上已有模块div#cls_pnlHeader_wrap 对应js css在demo中未作引入 如http://bulo.hujiang.com/home/
+        1. 吊顶是position:fixed 所以页面预留出38px空白给他覆盖
+        1. 编码、库与线上一致，引了一个像基础样式类的文件
+        1. 给的PNG物料没有分层，没有标注，没有体现大于width:1920版本背景, 线上吊顶height38px视觉稿35px、背景左右还不是等分的...等 只是试题非上线，确认环节就略了，开切
+    -->
+    <head>
+        <meta charset="utf-8" />
+        <title> 全名听写成绩单  - 我的沪江 </title>
+        <link rel='stylesheet' href='http://res.s.hjfile.cn/app/css/output/$_app_css_style_css$_app_css_feed_css$_app_css_application_css$_app_css_home_css$_app_css_ing_css$_app_css_newing_css$_app_css_userlistdown_css$_app_css_userface_css$_app_css_new_home_css.css?v=635224511000000000' type='text/css'/>
+        <link rel='stylesheet' href='res/css/cjd.css?20140212.css' type='text/css'/>
+        <script>window.cjdConfig = window.cjdConfig || {};</script>
+    </head>
+    <body>
+        <div class="cjd_hd">
+            <div class="cjd_hder clearbox">
+                <a href="#" target="_blank" class="cjd_report">查看个人听写成绩单</a>
+            </div>
+        </div>
+        <div class="cjd_bd">
+            <div class="cjd_fz cjd_mod clearbox">
+                <div class="cjd_share"><a href="#" class="cjd_share_targ" title="分享到"></a></div>
+                <div class="cjd_mod_tit">听说峰值<s></s></div>
+                <div class="cjd_fz_m1">
+                    <span class="cjd_fz_m1bg"></span>
+                    <p class="cjd_fz_m1tip">听写颠覆截至目前为止，共有<em id="J_CjdFzNum">77,888,999</em>人次参加听写</p>
+                </div>
+                <div class="cjd_fz_m2">
+                    <p class="cjd_fz_mtit">听写节目：听写库目前共有1000个听写节目</p>
+                    <span class="cjd_fz_m2bg"></span>
+                    <div class="cjd_fz_m2tb j_cjd_mod" data-modname='mod/jiemu' data-cfg="jiemu"></div>
+                    <script>
+                    cjdConfig.jiemu={
+                        data:[
+                            {
+                                num:10,
+                                icon:"http://img4.3lian.com/sucai2/img14/61/flag131.jpg"
+                            },
+                            {
+                                num:90,
+                                icon:"http://img4.3lian.com/sucai2/img14/61/flag128.jpg"
+                            },
+                            {
+                                num:89,
+                                icon:"http://img4.3lian.com/sucai2/img14/61/flag120.jpg"
+                            },
+                            {
+                                num:45,
+                                icon:"http://img4.3lian.com/sucai2/img14/61/flag120.jpg"
+                            },
+                            {
+                                num:120,
+                                icon:"http://img4.3lian.com/sucai2/img14/61/flag120.jpg"
+                            },
+                            {
+                                num:69,
+                                icon:"http://img4.3lian.com/sucai2/img14/61/flag120.jpg"
+                            }
+                        ]
+                    }
+                    </script>
+                </div>
+                <div class="cjd_fz_m3">
+                    <p class="cjd_fz_mtit">听写次数最多的城市</p>
+                    <div class="cjd_fz_m3tb j_cjd_mod" data-modname='mod/citytop' data-cfg="citytop"></div>
+                    <script>
+                    cjdConfig.citytop={
+                        data:[
+                            {
+                                name:"北京",
+                                icon:"res/img/ico_fzm301.png"
+                            },
+                            {
+                                name:"上海",
+                                icon:"res/img/ico_fzm303.png"
+                            },
+                            {
+                                name:"杭州",
+                                icon:"res/img/ico_fzm302.png"
+                            }
+                        ]
+                    }
+                    </script>
+                </div>
+            </div>
+            <div class="cjd_dq cjd_mod j_cjd_mod" data-modname='mod/map' data-cfg="dqmap">
+                <div class="cjd_mod_tit">地区听写面面观<s></s></div>
+                <div class="clearbox">
+                    <dl class="cjd_dq_m1">
+                        <dt>年度听写帝</dt>
+                        <dd>上海的兄弟最爱听写</dd>
+                        <dt>年度听写帝</dt>
+                        <dd>上海的兄弟最爱听写</dd>
+                        <dt>年度听写帝</dt>
+                        <dd>上海的兄弟最爱听写</dd>
+                    </dl>
+                    <div class="cjd_dq_m2">
+                        <div id="map"></div>
+                        <dl class="cjd_maptip clearbox">
+                            <dt>听写平均正确率：</dt>
+                            <dd class="i1" data-leve="2">小于50%，</dd>
+                            <dd class="i2" data-leve="1">50%-70%，</dd>
+                            <dd class="i3" data-leve="0">大于70%</dd>
+                        </dl>
+                    </div>
+                    <ul class="cjd_dq_m3">
+                        <li data-area="henan">
+                            <span><em>河南</em>省<em>开封</em>市</span>最爱学英语
+                        </li>
+                        <li data-area="qinghai">
+                            <span><em>青海</em>省</span>最爱学英语
+                        </li>
+                        <li  data-area="jiangsu">
+                            <span><em>江苏</em>省<em>开封</em>市</span>最爱学英语
+                        </li>
+                    </ul>
+                </div>
+                <script type="text/javascript">
+                    // 只对明文给出的地区作交互
+                    cjdConfig.dqmap={
+                        /*
+                        heilongjiang: '黑龙江',
+                        jilin: '吉林', 
+                        liaoning: '辽宁', 
+                        hebei: '河北', 
+                        shandong: '山东', 
+                        jiangsu: '江苏', 
+                        zhejiang: '浙江', 
+                        anhui: '安徽', 
+                        henan: '河南', 
+                        shanxi: '山西', 
+                        shaanxi: '陕西', 
+                        gansu: '甘肃', 
+                        hubei: '湖北', 
+                        jiangxi: '江西', 
+                        fujian: '福建', 
+                        hunan: '湖南', 
+                        guizhou: '贵州', 
+                        sichuan: '四川', 
+                        yunnan: '云南', 
+                        qinghai: '青海', 
+                        hainan: '海南', 
+                        shanghai: '上海', 
+                        chongqing: '重庆', 
+                        tianjin: '天津', 
+                        beijing: '北京', 
+                        ningxia: '宁夏', 
+                        neimongol: '内蒙古', 
+                        guangxi: '广西', 
+                        xinjiang: '新疆', 
+                        xizang: '西藏', 
+                        guangdong: '广东', 
+                        hongkong: '香港', 
+                        taiwan: '台湾', 
+                        macau: '澳门'
+                        */
+                        dq:{
+                            'heilongjiang': {
+                                "data":0.88
+                            },
+                            'sichuan': {
+                                "data":0.90
+                            },
+                            'henan': {
+                                "data":0.78
+                            },
+                            'xizang':{
+                                "data":0.55
+                            }
+                        } 
+                    }
+                </script>
+            </div>
+            <div class="cjd_xz cjd_mod clearbox j_cjd_mod" data-modname='mod/xingzuo' data-cfg="xingzuo">
+               <div class="cjd_mod_tit">星座男女消费观<s></s></div>
+               <div class="cjd_xz_boy">
+                   <p class="tit"><em>星座男</em>全年人均消费</p>
+                   <ul class="cjd_xz_list clearbox">
+                       <li class="i1"><b></b><s></s><em>白羊</em></li>
+                       <li class="i2"><b></b><s></s><em>金牛</em></li>
+                       <li class="i3"><b></b><s></s><em>双子</em></li>
+                       <li class="i4"><b></b><s></s><em>巨蟹</em></li>
+                       <li class="i5"><b></b><s></s><em>射手</em></li>
+                       <li class="i6"><b></b><s></s><em>处女</em></li>
+                       <li class="i7"><b></b><s></s><em>狮子</em></li>
+                       <li class="i8"><b></b><s></s><em>天蝎</em></li>
+                       <li class="i9"><b></b><s></s><em>天平</em></li>
+                       <li class="i10"><b></b><s></s><em>魔蝎</em></li>
+                       <li class="i11"><b></b><s></s><em>水平</em></li>
+                       <li class="i12"><b></b><s></s><em>双鱼</em></li>
+                   </ul>
+                   <p class="cjd_xz_tip"><strong>【狮子男】</strong>我挑故我在，敢爱敢恨，在男生中挑错名列第一，人均<em>24</em>次</p>
+               </div>
+               <div class="cjd_xz_girl">
+                   <p class="tit"><em>星座女</em>全年人均消费</p>
+                   <ul class="cjd_xz_list clearbox">
+                       <li class="i1"><b></b><s></s><em>白羊</em></li>
+                       <li class="i2"><b></b><s></s><em>金牛</em></li>
+                       <li class="i3"><b></b><s></s><em>双子</em></li>
+                       <li class="i4"><b></b><s></s><em>巨蟹</em></li>
+                       <li class="i5"><b></b><s></s><em>射手</em></li>
+                       <li class="i6"><b></b><s></s><em>处女</em></li>
+                       <li class="i7"><b></b><s></s><em>狮子</em></li>
+                       <li class="i8"><b></b><s></s><em>天蝎</em></li>
+                       <li class="i9"><b></b><s></s><em>天平</em></li>
+                       <li class="i10"><b></b><s></s><em>魔蝎</em></li>
+                       <li class="i11"><b></b><s></s><em>水平</em></li>
+                       <li class="i12"><b></b><s></s><em>双鱼</em></li>
+                   </ul>
+                   <p class="cjd_xz_tip"><strong>【狮子女】</strong>我挑故我在，敢爱敢恨，在女生中挑错名列第一，人均<em>24</em>次</p>
+               </div>
+            </div>
+            <script type="text/javascript"> 
+                cjdConfig.xingzuo={
+                    data:{
+                        "boy":{// 星座id:人均值
+                            "1":{val:13},
+                            "2":{val:45},
+                            "3":{val:56},
+                            "4":{val:23},
+                            "5":{val:55},
+                            "6":{val:88},
+                            "7":{val:87},
+                            "8":{val:66},
+                            "9":{val:44},
+                            "10":{val:56},
+                            "11":{val:15},
+                            "12":{val:24}
+                        },
+                        "girl":{
+                            "1":{val:66},
+                            "2":{val:45},
+                            "3":{val:23},
+                            "4":{val:23},
+                            "5":{val:74},
+                            "6":{val:21},
+                            "7":{val:65},
+                            "8":{val:66},
+                            "9":{val:43},
+                            "10":{val:56},
+                            "11":{val:88},
+                            "12":{val:43}
+                        }
+                    } 
+                }
+            </script>
+            <div class="cjd_hlw cjd_mod">
+               <div class="cjd_mod_tit">互联网时候学习<s></s></div>
+               <div class="cjd_hlw_box clearbox">
+                   <div class="cjd_hlw_m1"><em>232, 234</em>人次</div>
+                   <div class="cjd_hlw_m2">人均听写篇数:<em>15</em></div>
+                   <div class="cjd_hlw_m3">62万人赚到<br/><em>234, 234, 244</em>沪元</div>
+                   <div class="cjd_hlw_m4"></div>
+                   <div class="cjd_hlw_m5"><em>24, 234, 243</em>使用过听力酷</div>
+               </div>
+            </div>
+        </div>
+        <div></div>
+        <div class="cjd_ft"><a href="#">关于</a>|<a href="#">联系</a></div>
+        <script type="text/javascript" src="http://res.hjfile.cn/js/lib/jq/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="res/js/lib/sea.js"></script>
+        <script type="text/javascript">
+            /* */
+            seajs.config({
+                alias: {
+                    'jquery': 'http://res.hjfile.cn/js/lib/jq/1.8.3/jquery.min.js'
+                },
+                paths: {
+                   
+                },
+                base: './res/js/',
+                charset: 'utf-8'
+            });
+            //require('lib/datalazyload')(jQuery);
+            seajs.use('lib/datalazyload',function(lazy){
+                $(".j_cjd_mod").datalazyload(function(){
+                    var jEl = $(this);
+                    var modName = jEl.attr("data-modname");
+                    var modCfg = jEl.attr("data-cfg");
+                    seajs.use(modName,function(mod){
+                        mod.init(cjdConfig[modCfg],jEl);
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
