@@ -1,3 +1,7 @@
+/**
+* dom节点lazy判断模块
+* @author daqiu 2014.02
+*/
 ;define("lib/datalazyload",function(require, exports, module){
     return (function($,win) {
         $.fn.datalazyload = function(callback,options) {
@@ -12,6 +16,7 @@
             var destroy = function(){
                 $(window).unbind("scroll", refresh);
             }
+            // 性能缓冲
             var refresh = function(){
                 if(timer){
                     clearTimeout(timer)
@@ -29,7 +34,7 @@
             var check = function() {
                 var viewTop = $(win).scrollTop() - config.diff.top, viewBottom = viewTop + $(win).height() + config.diff.bottom;
                 //console.log(viewTop,viewBottom);
-                // 销毁
+                // 销毁提升性能
                 if(cache.length==0){
                     return destroy();
                 }

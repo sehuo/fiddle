@@ -1,5 +1,5 @@
 /**
-* 听写节目图表模块
+* 星座模块
 * @author daqiu 2014.02
 */
 ;define("mod/xingzuo",function(require, exports, module){
@@ -27,9 +27,9 @@
     return {
         /*
         * @param [cfg] {Object} 
-        * @param [cfg.data] {Array} 节目国家列表
-        * @param [cfg.data[0].num] {Number} 节目数
-        * @param [cfg.data[0].icon] {String} 国旗图片URL
+        * @param [cfg.data] {Object} 
+        * @param [cfg.data.boy] {Object} 男生数据，必须，k:星座id，v：消费量，k值与本模块内置的xingzuo要保持一至
+        * @param [cfg.data.girl] {Object} 女生数据，必须，k:星座id，v：消费量
         * @param [jEl] {Object} 模块节点对应jquery对象
         * @return 
         */
